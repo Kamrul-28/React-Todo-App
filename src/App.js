@@ -14,6 +14,7 @@ import React from "react"
 import TodoItem from "./TodoItem"
 import todosData from "./todosData"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 class App extends React.Component {
     constructor() {
@@ -43,7 +44,13 @@ class App extends React.Component {
         
         return (
             <div className="todo-list" className="container">
-                {todoItems}
+              <div className="row">
+                <div className="col-12 mt-5">
+                   <section className="todo">
+                       {todoItems}
+                   </section> 
+                </div>
+              </div>   
             </div>
         )    
     }
